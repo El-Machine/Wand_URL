@@ -140,22 +140,34 @@ extension Ask {//} where T == [any Rest.Model] {
 
     static
     func get(handler: @escaping (T)->() ) -> Get {
-        .one(handler: handler)
+        Get {
+            handler($0)
+            return false
+        }
     }
 
     static
     func post(handler: @escaping (T)->() ) -> Post {
-        Post.one(handler: handler)
+        Post {
+            handler($0)
+            return false
+        }
     }
 
     static
     func put(handler: @escaping (T)->() ) -> Put {
-        .one(handler: handler)
+        Put {
+            handler($0)
+            return false
+        }
     }
 
     static
     func delete(handler: @escaping (T)->() ) -> Delete {
-        .one(handler: handler)
+        Delete {
+            handler($0)
+            return false
+        }
     }
 
 }
