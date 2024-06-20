@@ -331,9 +331,9 @@
 			productReference = 613966482BE0F87A004C18A3 /* watchPlayTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6162624B28BC8E2B00D63EA5 /* Play */ = {
+		6162624B28BC8E2B00D63EA5 /* play */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6162625A28BC8E2B00D63EA5 /* Build configuration list for PBXNativeTarget "Play" */;
+			buildConfigurationList = 6162625A28BC8E2B00D63EA5 /* Build configuration list for PBXNativeTarget "play" */;
 			buildPhases = (
 				6162624828BC8E2B00D63EA5 /* Sources */,
 				6162624928BC8E2B00D63EA5 /* Frameworks */,
@@ -343,7 +343,7 @@
 			);
 			dependencies = (
 			);
-			name = Play;
+			name = play;
 			packageProductDependencies = (
 				61F648C62BEA122900C2625C /* Wand_URL */,
 			);
@@ -417,7 +417,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6162624B28BC8E2B00D63EA5 /* Play */,
+				6162624B28BC8E2B00D63EA5 /* play */,
 				618D53D02BE3C5120098DB6F /* wandTests */,
 				613966142BE0F4EF004C18A3 /* watchPlay */,
 				613966472BE0F87A004C18A3 /* watchPlayTests */,
@@ -533,7 +533,7 @@
 		};
 		618D53D62BE3C5120098DB6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6162624B28BC8E2B00D63EA5 /* Play */;
+			target = 6162624B28BC8E2B00D63EA5 /* play */;
 			targetProxy = 618D53D52BE3C5120098DB6F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1167,7 +1167,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6162625A28BC8E2B00D63EA5 /* Build configuration list for PBXNativeTarget "Play" */ = {
+		6162625A28BC8E2B00D63EA5 /* Build configuration list for PBXNativeTarget "play" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6162625B28BC8E2B00D63EA5 /* Debug */,

@@ -23,7 +23,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "WandURL",
+    name: "Wand_URL",
     defaultLocalization: "ru",
 
     platforms: [
@@ -34,21 +34,21 @@ let package = Package(
     ],
 
     products: [
-        .library(name: "WandURL", targets: ["WandURL"])
+        .library(name: "Wand_URL", targets: ["Wand_URL"])
     ],
 
     dependencies: [
         .package(url: "https://github.com/el-machine/Any.git", from: "1.0.1"),
-        .package(url: "https://github.com/el-machine/Wand.git", from: "1.3.6"),
+        .package(url: "https://github.com/el-machine/Wand.git", from: "1.3.8"),
     ],
 
     targets: [
 
-        .target(name: "WandURL", dependencies: ["Wand"] ),
+        .target(name: "Wand_URL", dependencies: ["Wand"] ),
         .testTarget(name: "wandTests", dependencies:
                         [
                             .product(name: "Any_", package: "Any"),
-                            "WandURL",
+                            "Wand_URL",
                         ]
                    )
 

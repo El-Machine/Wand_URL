@@ -25,16 +25,16 @@ import Wand
 public
 extension Ask { // where T: Rest.Model { where T: CloudKit.Model {
 
-    class Get: Ask {
+    class Get: One {
     }
 
-    class Post: Ask {
+    class Post: One {
     }
 
-    class Put: Ask {
+    class Put: One {
     }
 
-    class Delete: Ask {
+    class Delete: One {
     }
 
 }
@@ -46,25 +46,37 @@ extension Ask where T: Rest.Model {
     @inline(__always)
     static
     func get(handler: @escaping (T)->() ) -> Get {
-        .one(handler: handler)
+        Get {
+            handler($0)
+            return false
+        }
     }
 
     @inline(__always)
     static
     func post(handler: @escaping (T)->() ) -> Post {
-        .one(handler: handler)
+        Post {
+            handler($0)
+            return false
+        }
     }
 
     @inline(__always)
     static
     func put(handler: @escaping (T)->() ) -> Put {
-        .one(handler: handler)
+        Put {
+            handler($0)
+            return false
+        }
     }
 
     @inline(__always)
     static
     func delete(handler: @escaping (T)->() ) -> Delete {
-        .one(handler: handler)
+        Delete {
+            handler($0)
+            return false
+        }
     }
 
 }
